@@ -1,0 +1,37 @@
+{
+  "owner": "jabee.cosme@infinitedata.com",
+  "priority": "0",
+  "processingType": "TASK",
+  "serverNodeType": "INTERNAL",
+  "taskType": "WAIT",
+  "customFieldValues": {
+  },
+  "processingCommand": {
+    "waitDuration": "PT10S",
+    "waitMode": "FOR"
+  },
+  "actions": 
+  [
+    {
+      "processingActionType": "SET_VARIABLE_VALUE",
+      "processingEventCategory": "PROCESSING",
+      "processingEventType": "PROCESSING_COMPLETED",
+      "condition": {
+        "criteria": 
+        [
+          {
+            "fieldName": "processingStatus",
+            "operator": "EQ",
+            "value": "Completed"
+          }
+        ],
+        "operator": "AND"
+      },
+      "processingCommand": {
+        "operator": "SET",
+        "resource": "My_Variable",
+        "value": "YES"
+      }
+    }
+  ]
+}
