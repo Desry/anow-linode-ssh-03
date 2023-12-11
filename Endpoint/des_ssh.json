@@ -1,0 +1,13 @@
+{
+  "codeRepository": "[DES]GITHUB_TEST_SSH_03",
+  "endpointType": "SSH",
+  "customFieldValues": {
+  },
+  "endpointProperties": {
+    "authenticationMethod": "PASSWORD",
+    "host": "anow.arielampol.com",
+    "password": "ENCRYPTED::CRATEAcKFgoREAcKFhMbDAwM",
+    "port": 22,
+    "user": "desry"
+  }
+}
